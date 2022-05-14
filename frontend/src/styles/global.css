@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-
 :root {
-  --primary: #06d6a0;
+  --primary: 6, 214, 160;
   --secondary: 250, 100, 61;
 }
 
@@ -10,7 +9,11 @@ body {
   height: 100%;
   overflow-x: hidden;
   font-family: 'Open Sans';
-  letter-spacing: -0.03em;
+  letter-spacing: -0.3;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
 }
 
 input[type='text'],
@@ -32,6 +35,10 @@ input[type='date']:disabled {
   border: 0.5px solid #dcdcdc;
   outline: none;
   color: #626264;
+}
+
+.bg-secondary {
+  background-color: rgb(var(--secondary)) !important;
 }
 
 .btn-secondary,
@@ -56,17 +63,28 @@ input[type='date']:disabled {
   font-size: 15px;
 }
 
-.bg-secondary {
-  background-color: rgb(var(--secondary)) !important;
+.btn-secondary.rounded-circle {
+  padding: 6px 14px;
 }
 
-.bg-primary {
-  background-color: var(--primary) !important;
+.badge {
+  font-weight: lighter;
 }
+
+.badge.badge-primary {
+  background: rgb(var(--primary), 0.1);
+  color: rgb(var(--primary));
+}
+
+.badge.badge-secondary {
+  background: rgb(var(--secondary), 0.1);
+  color: rgb(var(--secondary));
+}
+
 .box {
   background: #fff;
   box-shadow: 0px 0px 11px 6px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   display: inline-block;
-  padding: 50px;
+  padding: 30px;
 }

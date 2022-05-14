@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Cadastro } from './pages/Cadastro/Cadastro';
+import { PetShoop } from './pages/PetShoop/PetShoop';
 import './styles/global.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Cadastro />
+    <PetShoop />
   </React.StrictMode>
 );
