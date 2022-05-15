@@ -2,6 +2,7 @@
 :root {
   --primary: 6, 214, 160;
   --secondary: 250, 100, 61;
+  --gray: #e1e1e6;
 }
 
 html,
@@ -13,7 +14,7 @@ body {
 }
 
 .bg-primary {
-  background-color: var(--primary) !important;
+  background-color: rgb(var(--primary)) !important;
 }
 
 input[type='text'],
@@ -87,4 +88,23 @@ input[type='date']:disabled {
   border-radius: 5px;
   display: inline-block;
   padding: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(var(--gray));
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--gray);
+  border-radius: 10px;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gray);
+  border-radius: 10px;
+  display: none;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray);
+  display: block;
 }

@@ -4,22 +4,22 @@ import Ilustration from '../../assets/illustration.png';
 export const Cadastro = () => {
   return (
     <div className='container-fluid h-100 bg-primary'>
-      <Header whiteVersion />
+      <Header whiteVersion hideCart />
       <div className='row'>
         <div className='col-6 text-right my-auto'>
-          <img src={Ilustration} alt='img-logo' className='img-fluid' />
+          <img src={Ilustration} alt='img-cadastro' className='img-fluid'></img>
         </div>
-        <div className='col-6 '>
+        <div className='col-6'>
           <div className='box col-8'>
             <h2 className='text-center'>
-              Falta pouco para fazer seu pet feliz.
+              Falta pouco para o seu pet ser feliz.
             </h2>
             <br />
             <br />
             <input
               type='text'
               className='form-control form-control-lg mb-3'
-              placeholder='Nome Completo'
+              placeholder='Nome completo'
             />
 
             <input
@@ -37,7 +37,7 @@ export const Cadastro = () => {
             <input
               type='text'
               className='form-control form-control-lg mb-3'
-              placeholder='CPF'
+              placeholder='Cpf'
             />
 
             <input
@@ -45,8 +45,9 @@ export const Cadastro = () => {
               className='form-control form-control-lg mb-3'
               placeholder='Data de Nascimento'
             />
+
             <button className='btn btn-lg btn-block btn-secondary'>
-              Finalizar pedido
+              Finalizar Pedido
             </button>
           </div>
         </div>
